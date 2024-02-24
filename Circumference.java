@@ -1,13 +1,23 @@
 class Circumference extends ConsoleProgram {
 
   /**
-  * Description
-  * @author:
+  * Calculates circumference given radius
+  * c = 2πr
+  * @author: Edric
   */
   
   public void run() {
     
-    // start coding here
-    
+    // declare variables
+    double circumference;
+    double radius;
+
+    // calculations
+    radius = readDouble("Enter the radius (cm): ");
+    circumference = 2 * Math.PI * radius;
+
+    // output
+    System.out.printf("Circumference (cm): " + "%.2f", circumference);
+
   }
 }

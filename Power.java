@@ -1,13 +1,26 @@
 class Power extends ConsoleProgram {
 
   /**
-  * Description
-  * @author:
+  * Exponent calculator
+  * @author: Edric
   */
   
   public void run() {
     
-    // start coding here
+    // declare variables
+    double base;
+    double exponent;
+    double result;
     
+    // inputs
+    base = readDouble("Enter the base: ");
+    exponent = readDouble("Enter the exponent: ");
+
+    // calculations
+    result = Math.pow(base,exponent);
+
+    // output
+    System.out.printf("Result: " + "%.2f", result);
+
   }
 }
